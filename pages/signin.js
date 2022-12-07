@@ -136,14 +136,14 @@ function Login1({ data, res }) {
 
 export default Login1;
 
-export async function getServerSideProps(req, res) {
-  const result = await fetch(`http://127.0.0.1:8000/userprofile/`, {
-    method: "GET",
-  });
-  const data = await result.json();
-  return {
-    props: {
-      data: data,
-    },
-  };
-}
+// export async function getServerSideProps(req, res) {
+//   const result = await fetch(`http://127.0.0.1:8000/userprofile/`, {
+//     method: "GET",
+//   });
+//   const data = await result.json();
+//   return {
+//     props: {
+//       data: data,
+//     },
+//   };
+// }
