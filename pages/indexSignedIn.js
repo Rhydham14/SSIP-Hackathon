@@ -9,6 +9,7 @@ import lcc from "../public/LC_color.png";
 import cfc from "../public/CF_color.png";
 import ccc from "../public/CC_color.png";
 import { useRef } from "react";
+import { motion } from "framer-motion";
 
 export default function Home() {
   const ref = useRef(null);
