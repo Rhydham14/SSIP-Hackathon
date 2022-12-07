@@ -63,16 +63,16 @@ function Signup2() {
           codechef_id: codechef,
         },
       };
-      const result = await fetch(`http://127.0.0.1:8000/userprofile/`, {
-        method: "POST",
-        mode: "cors",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(userinfo),
-      });
-      const data = await result.json();
-      console.log(data);
+      // const result = await fetch(`http://127.0.0.1:8000/userprofile/`, {
+      //   method: "POST",
+      //   mode: "cors",
+      //   headers: {
+      //     "Content-Type": "application/json",
+      //   },
+      //   body: JSON.stringify(userinfo),
+      // });
+      // const data = await result.json();
+      // console.log(data);
 
       setTimeout(() => {
         router.push("/signin");
